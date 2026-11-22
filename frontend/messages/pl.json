@@ -1,0 +1,808 @@
+{
+    "Navbar": {
+        "home": "Strona główna",
+        "offer": "Oferta",
+        "howItWorks": "Jak to działa",
+        "about": "O nas",
+        "contact": "Kontakt",
+        "login": "Zaloguj się",
+        "register": "Rejestracja",
+        "language": "Język"
+    },
+    "Home": {
+        "hero": {
+            "title": "Tworzymy strony,",
+            "subtitle": "które",
+            "highlight": "robią wrażenie.",
+            "description": "Nowoczesne strony internetowe, aplikacje i rozwiązania cyfrowe dla firm, które chcą wyróżnić się na rynku. Łączymy design z technologią, tworząc produkty dopasowane do Twojego biznesu.",
+            "offer": "Zobacz naszą ofertę",
+            "contact": "Porozmawiajmy",
+            "features": {
+                "design": "Nowoczesny design",
+                "performance": "Wydajna technologia",
+                "approach": "Indywidualne podejście"
+            }
+        },
+        "services": {
+            "label": "CO ROBIMY",
+            "title": "Rozwiązania, które",
+            "highlight": "robią różnicę.",
+            "description": "Projektujemy i tworzymy nowoczesne rozwiązania cyfrowe, które łączą estetykę, funkcjonalność i wydajność.",
+            "more": "Dowiedz się więcej",
+            "items": {
+                "websites": {
+                    "title": "Strony internetowe",
+                    "description": "Nowoczesne, szybkie i responsywne strony, które pomagają firmom wyróżnić się w internecie."
+                },
+                "webapps": {
+                    "title": "Aplikacje webowe",
+                    "description": "Dedykowane aplikacje i systemy internetowe dopasowane do potrzeb Twojego biznesu."
+                },
+                "digital": {
+                    "title": "Rozwiązania cyfrowe",
+                    "description": "Funkcjonalne narzędzia, integracje i automatyzacje usprawniające codzienną pracę."
+                }
+            }
+        },
+        "about": {
+            "label": "DLACZEGO AUREONWEB",
+            "title": "Więcej niż strona.",
+            "highlight": "Twój cyfrowy rozwój.",
+            "description1": "W AUREONWEB wierzymy, że dobra strona internetowa powinna nie tylko wyglądać profesjonalnie, ale także wspierać rozwój firmy.",
+            "description2": "Dlatego stawiamy na przemyślany design, nowoczesne technologie i rozwiązania dopasowane do rzeczywistych potrzeb biznesowych.",
+            "more": "Poznaj nasze rozwiązania",
+            "advantages": {
+                "technology": {
+                    "title": "Nowoczesne technologie",
+                    "description": "Wykorzystujemy sprawdzone rozwiązania, aby tworzyć szybkie i wydajne produkty."
+                },
+                "quality": {
+                    "title": "Jakość i bezpieczeństwo",
+                    "description": "Dbamy o jakość wykonania, responsywność i solidne fundamenty techniczne."
+                },
+                "individual": {
+                    "title": "Indywidualne podejście",
+                    "description": "Każdy projekt dopasowujemy do potrzeb, celów i charakteru Twojej firmy."
+                }
+            }
+        },
+        "process": {
+            "label": "JAK PRACUJEMY",
+            "title": "Od pomysłu do realizacji.",
+            "description": "Przejrzysty proces współpracy, dzięki któremu wiesz, na jakim etapie znajduje się Twój projekt.",
+            "steps": {
+                "choose": {
+                    "title": "Wybierz usługę",
+                    "description": "Sprawdź naszą ofertę i wybierz rozwiązanie dopasowane do swojej firmy."
+                },
+                "describe": {
+                    "title": "Opowiedz o projekcie",
+                    "description": "Przedstaw nam swoją wizję, oczekiwania i najważniejsze wymagania."
+                },
+                "development": {
+                    "title": "Realizacja",
+                    "description": "Projektujemy i wdrażamy rozwiązanie zgodnie z ustalonym zakresem."
+                },
+                "delivery": {
+                    "title": "Gotowy produkt",
+                    "description": "Otrzymujesz gotową stronę lub aplikację przygotowaną do uruchomienia."
+                }
+            }
+        },
+        "cta": {
+            "label": "ZACZNIJMY WSPÓŁPRACĘ",
+            "title": "Masz pomysł?",
+            "highlight": "Zrealizujmy go razem.",
+            "description": "Niezależnie od tego, czy potrzebujesz strony internetowej, czy bardziej zaawansowanego rozwiązania, pomożemy Ci rozpocząć projekt.",
+            "button": "Sprawdź ofertę"
+        },
+        "footer": {
+            "rights": "Wszelkie prawa zastrzeżone.",
+            "offer": "Nasza oferta"
+        }
+    },
+    "Footer": {
+        "cta": {
+            "badge": "Twój projekt zaczyna się tutaj",
+            "title": "Masz pomysł?",
+            "highlight": "Zrealizujmy go razem.",
+            "description": "Stwórzmy nowoczesną stronę internetową dopasowaną do Twojego biznesu.",
+            "button": "Rozpocznij projekt"
+        },
+        "brand": {
+            "description": "Nowoczesne strony internetowe i rozwiązania cyfrowe dla Twojego biznesu."
+        },
+        "navigation": {
+            "title": "Nawigacja",
+            "home": "Strona główna",
+            "offer": "Oferta",
+            "about": "O nas",
+            "contact": "Kontakt"
+        },
+        "services": {
+            "title": "Usługi",
+            "websites": "Strony internetowe",
+            "webapps": "Aplikacje webowe",
+            "automations": "Automatyzacje"
+        },
+        "contact": {
+            "email": "Kontakt e-mail",
+            "location": "Polska",
+            "button": "Skontaktuj się z nami"
+        },
+        "copyright": "Wszelkie prawa zastrzeżone.",
+        "credits": "Stworzone z pasją do technologii.",
+        "terms": "Regulamin"
+    },
+    "HowItWorks": {
+        "hero": {
+            "badge": "Prosty proces. Profesjonalny efekt.",
+            "title": "Od pomysłu",
+            "highlight": "do gotowej strony.",
+            "description": "Bez chaosu, niejasnych etapów i zgadywania, co dzieje się z Twoim projektem. Poznaj przejrzysty proces współpracy z AUREONWEB STUDIO.",
+            "primary": "Sprawdź pakiety",
+            "secondary": "Poznaj proces"
+        },
+        "preview": {
+            "subtitle": "Podgląd panelu klienta",
+            "progressLabel": "Postęp realizacji",
+            "item1": "Zamówienie przyjęte",
+            "item2": "Wymagania ustalone",
+            "item3": "Projekt w realizacji",
+            "statusLabel": "Status projektu",
+            "status": "W realizacji",
+            "note": "W przyszłości tutaj zobaczysz aktualizacje dotyczące swojego zamówienia.",
+            "disclaimer": "Wizualizacja poglądowa — panel klienta jest w przygotowaniu."
+        },
+        "process": {
+            "eyebrow": "5 prostych kroków",
+            "title": "Tak wygląda",
+            "highlight": "współpraca.",
+            "description": "Od pierwszego kliknięcia po publikację. Każdy etap ma konkretny cel."
+        },
+        "steps": {
+            "choose": {
+                "title": "Wybierz swój pakiet",
+                "description": "Porównaj dostępne pakiety i wybierz rozwiązanie najlepiej dopasowane do potrzeb oraz budżetu Twojej firmy.",
+                "point1": "Starter / Business / Premium",
+                "point2": "Przejrzyste ceny",
+                "point3": "Opcjonalna opieka"
+            },
+            "brief": {
+                "title": "Opowiedz nam o projekcie",
+                "description": "Wypełnij krótki formularz i opisz swoją wizję. Im lepiej poznamy potrzeby Twojej firmy, tym trafniej zaplanujemy realizację.",
+                "point1": "Dane kontaktowe",
+                "point2": "Opis wymagań",
+                "point3": "Indywidualne ustalenia"
+            },
+            "confirm": {
+                "title": "Potwierdź szczegóły",
+                "description": "Ustalamy zakres prac, cenę i warunki współpracy. Po ich zaakceptowaniu możemy rozpocząć realizację.",
+                "point1": "Uzgodniony zakres",
+                "point2": "Jasne warunki",
+                "point3": "Potwierdzenie zamówienia"
+            },
+            "progress": {
+                "title": "Śledź postępy projektu",
+                "description": "Podczas realizacji informujemy Cię o kolejnych etapach. Docelowo aktualny status projektu i przewidywany termin będą dostępne w panelu klienta.",
+                "point1": "Etapy realizacji",
+                "point2": "Aktualizacje statusu",
+                "point3": "Planowany termin"
+            },
+            "launch": {
+                "title": "Odbierz gotową stronę",
+                "description": "Po ukończeniu projektu sprawdzamy działanie strony, nanosimy uzgodnione poprawki i przygotowujemy ją do uruchomienia.",
+                "point1": "Testy i weryfikacja",
+                "point2": "Akceptacja projektu",
+                "point3": "Publikacja strony"
+            }
+        },
+        "benefits": {
+            "eyebrow": "Dlaczego AUREONWEB",
+            "title": "Współpraca bez niepotrzebnych komplikacji.",
+            "description": "Stawiamy na jasną komunikację, przemyślany proces i rozwiązania dopasowane do potrzeb Twojego biznesu.",
+            "transparent": {
+                "title": "Przejrzyste zasady",
+                "description": "Wiesz, jaki zakres prac obejmuje zamówienie i na jakich warunkach realizujemy projekt."
+            },
+            "control": {
+                "title": "Wgląd w realizację",
+                "description": "Informujemy o postępach i kolejnych etapach. Pracujemy również nad wygodnym panelem klienta."
+            },
+            "quality": {
+                "title": "Dbałość o szczegóły",
+                "description": "Projektujemy nowoczesne, responsywne rozwiązania z naciskiem na estetykę i użyteczność."
+            }
+        },
+        "faq": {
+            "title": "Najczęstsze pytania",
+            "items": [
+                {
+                    "question": "Czy muszę wykupić abonament?",
+                    "answer": "Nie. Możesz zamówić projekt bez abonamentu. Opcjonalne pakiety opieki obejmują dodatkowe usługi, których zakres poznasz przed potwierdzeniem zamówienia."
+                },
+                {
+                    "question": "Ile trwa stworzenie strony?",
+                    "answer": "Czas realizacji zależy od zakresu i stopnia skomplikowania projektu. Przewidywany termin ustalamy indywidualnie."
+                },
+                {
+                    "question": "Czy mogę zgłosić poprawki?",
+                    "answer": "Tak. Zakres i liczba poprawek zależą od wybranego pakietu oraz ustaleń przed rozpoczęciem realizacji."
+                },
+                {
+                    "question": "Czy będę widzieć postęp realizacji?",
+                    "answer": "Będziemy informować Cię o postępach projektu. Panel klienta z podglądem statusu jest obecnie w przygotowaniu."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Gotowy na",
+            "highlight": "własną stronę?",
+            "description": "Wybierz pakiet, który odpowiada potrzebom Twojej firmy, i rozpocznijmy rozmowę o Twoim projekcie.",
+            "button": "Zobacz ofertę"
+        }
+    },
+    "Terms": {
+        "metaTitle": "Regulamin | AUREONWEB STUDIO",
+        "metaDescription": "Regulamin świadczenia usług AUREONWEB STUDIO.",
+        "back": "Powrót na stronę główną",
+        "eyebrow": "DOKUMENTY PRAWNE",
+        "title": "Regulamin",
+        "description": "Poznaj zasady zamawiania stron internetowych, realizacji projektów oraz korzystania z naszych usług.",
+        "version": "Wersja robocza — przed rozpoczęciem sprzedaży",
+        "warningTitle": "Dokument w przygotowaniu",
+        "warningDescription": "Regulamin jest wersją roboczą. Przed rozpoczęciem sprzedaży zostanie uzupełniony o wymagane dane usługodawcy i szczegółowe warunki świadczenia usług.",
+        "contents": "SPIS TREŚCI",
+        "contactTitle": "Masz pytania?",
+        "contactDescription": "Skontaktuj się z nami, jeśli chcesz dowiedzieć się więcej o zasadach współpracy.",
+        "contactButton": "Napisz do nas",
+        "sections": {
+            "general": {
+                "title": "Postanowienia ogólne",
+                "items": {
+                    "1": "AUREONWEB STUDIO oferuje projektowanie, tworzenie i obsługę stron internetowych dla firm oraz klientów indywidualnych.",
+                    "2": "Serwis działa pod adresem aureonweb.com.",
+                    "3": "Kontakt: nexilsbusinesss@gmail.com.",
+                    "4": "Korzystanie z usług odbywa się na zasadach określonych w niniejszym Regulaminie oraz zaakceptowanej ofercie."
+                }
+            },
+            "orders": {
+                "title": "Zamówienia",
+                "items": {
+                    "1": "Złożenie zamówienia wymaga założenia bezpłatnego konta klienta.",
+                    "2": "Klient wybiera pakiet i przekazuje informacje potrzebne do realizacji projektu.",
+                    "3": "Cena, zakres prac, liczba poprawek oraz termin realizacji są ustalane indywidualnie przed przyjęciem zamówienia.",
+                    "4": "Przesłanie zapytania nie powoduje obowiązku zapłaty.",
+                    "5": "Zamówienie zostaje przyjęte po elektronicznym potwierdzeniu warunków przez obie strony. Nie wymaga podpisywania osobnej umowy papierowej."
+                }
+            },
+            "payments": {
+                "title": "Realizacja i płatności",
+                "items": {
+                    "1": "Projekt wykonywany jest zgodnie z zaakceptowanym zakresem.",
+                    "2": "Klient dostarcza materiały, do których wykorzystania posiada odpowiednie prawa.",
+                    "3": "Gotowa strona zostaje udostępniona klientowi do sprawdzenia i odbioru.",
+                    "4": "Płatność następuje w ciągu 3 dni od odbioru projektu.",
+                    "5": "Dostępne metody płatności to przelew bankowy oraz Stripe, po uruchomieniu tej metody.",
+                    "6": "Dodatkowe prace wymagają wcześniejszego uzgodnienia ceny."
+                }
+            },
+            "hosting": {
+                "title": "Hosting i opieka techniczna",
+                "items": {
+                    "1": "Klient może korzystać z własnego hostingu lub hostingu zapewnianego przez AUREONWEB STUDIO.",
+                    "2": "Opieka techniczna jest usługą opcjonalną.",
+                    "3": "Abonament odnawia się automatycznie co miesiąc po zaakceptowaniu przez klienta warunków płatności cyklicznych.",
+                    "4": "Klient może anulować odnowienie w dowolnym momencie. Usługa kończy się po upływie opłaconego okresu.",
+                    "5": "Cena, zakres opieki i warunki hostingu są przedstawiane przed zamówieniem.",
+                    "6": "Zakończenie opieki technicznej nie powoduje automatycznej utraty licencji na wykonaną stronę."
+                }
+            },
+            "copyright": {
+                "title": "Prawa autorskie",
+                "items": {
+                    "1": "Po rozliczeniu projektu klient otrzymuje niewyłączną licencję na korzystanie ze strony zgodnie z jej przeznaczeniem, w tym do celów komercyjnych.",
+                    "2": "Szczegółowy zakres korzystania ze strony, jej modyfikowania i udostępniania określają zaakceptowane warunki zamówienia.",
+                    "3": "Materiały i oprogramowanie pochodzące od podmiotów trzecich podlegają właściwym licencjom."
+                }
+            },
+            "complaints": {
+                "title": "Reklamacje i odstąpienie od umowy",
+                "items": {
+                    "1": "Reklamacje można zgłaszać na adres nexilsbusinesss@gmail.com.",
+                    "2": "Reklamacje rozpatrywane są zgodnie z obowiązującymi przepisami.",
+                    "3": "Konsument ma co do zasady prawo odstąpić od umowy zawartej na odległość w ciągu 14 dni, z uwzględnieniem wyjątków ustawowych.",
+                    "4": "Rozpoczęcie wykonywania usługi przed upływem terminu odstąpienia oraz ewentualne rozliczenie wykonanych prac podlegają obowiązującym przepisom.",
+                    "5": "Regulamin nie ogranicza ustawowych praw konsumenta."
+                }
+            },
+            "privacy": {
+                "title": "Dane osobowe",
+                "items": {
+                    "1": "Dane osobowe są przetwarzane w celu prowadzenia kont klientów, obsługi zamówień i realizacji usług.",
+                    "2": "Szczegółowe informacje dotyczące przetwarzania danych znajdują się w Polityce prywatności.",
+                    "3": "Informacje o plikach cookies znajdują się w Polityce cookies."
+                }
+            },
+            "final": {
+                "title": "Postanowienia końcowe",
+                "items": {
+                    "1": "Do Regulaminu stosuje się prawo polskie, z zachowaniem praw konsumentów.",
+                    "2": "Regulamin jest udostępniany elektronicznie w sposób umożliwiający jego zapisanie i odtworzenie.",
+                    "3": "Zmiany Regulaminu nie naruszają praw wynikających z wcześniej zawartych umów."
+                }
+            }
+        }
+    },
+    "AboutPage": {
+        "metaTitle": "O nas | AUREONWEB STUDIO",
+        "metaDescription": "Poznaj AUREONWEB STUDIO i nasze podejście do projektowania nowoczesnych stron internetowych.",
+        "hero": {
+            "badge": "POZNAJ AUREONWEB STUDIO",
+            "title": "Więcej niż",
+            "highlight": "zwykła strona.",
+            "description": "Tworzymy nowoczesne doświadczenia cyfrowe, które łączą estetykę, technologię i rzeczywiste potrzeby biznesu. Każdy projekt traktujemy jako szansę na stworzenie czegoś wartościowego.",
+            "primary": "Poznaj ofertę",
+            "secondary": "Nasza filozofia",
+            "visualTag": "Przemyślany design"
+        },
+        "philosophy": {
+            "eyebrow": "NASZA FILOZOFIA",
+            "title": "Dobry design to",
+            "highlight": "dopiero początek.",
+            "description1": "W AUREONWEB STUDIO wierzymy, że profesjonalna strona internetowa powinna robić znacznie więcej niż tylko dobrze wyglądać. Powinna być szybka, intuicyjna i wspierać cele biznesowe.",
+            "description2": "Łączymy kreatywne podejście z nowoczesnymi technologiami. Zamiast przypadkowych rozwiązań stawiamy na przemyślane projekty, przejrzystą komunikację i dbałość o szczegóły.",
+            "cardTitle": "Projektujemy z myślą o celu.",
+            "cardDescription": "Każda decyzja projektowa powinna mieć uzasadnienie. Od układu strony po sposób działania — wszystko tworzymy z myślą o użytkowniku i potrzebach klienta."
+        },
+        "values": {
+            "eyebrow": "CO JEST DLA NAS WAŻNE",
+            "title": "Nasze podejście do jakości.",
+            "description": "Stawiamy na fundamenty, które mają znaczenie zarówno podczas tworzenia strony, jak i po jej uruchomieniu.",
+            "items": {
+                "design": {
+                    "title": "Przemyślany design",
+                    "description": "Nowoczesna estetyka połączona z czytelnością, intuicyjną nawigacją i wygodą użytkowania."
+                },
+                "performance": {
+                    "title": "Szybkość i wydajność",
+                    "description": "Budujemy rozwiązania z naciskiem na płynne działanie, responsywność i dobre doświadczenia użytkownika."
+                },
+                "quality": {
+                    "title": "Jakość wykonania",
+                    "description": "Zwracamy uwagę na szczegóły, strukturę kodu i solidne fundamenty techniczne projektu."
+                },
+                "approach": {
+                    "title": "Indywidualne podejście",
+                    "description": "Poznajemy potrzeby klienta i dopasowujemy rozwiązania do konkretnego projektu, zamiast działać według jednego schematu."
+                }
+            }
+        },
+        "process": {
+            "eyebrow": "JAK PRACUJEMY",
+            "title": "Od pomysłu do realizacji.",
+            "description": "Przejrzysty proces współpracy pozwala skupić się na tym, co najważniejsze — stworzeniu dobrego produktu.",
+            "steps": {
+                "discover": {
+                    "title": "Poznajemy potrzeby",
+                    "description": "Rozmawiamy o celach, wymaganiach i oczekiwaniach związanych z projektem."
+                },
+                "design": {
+                    "title": "Projektujemy",
+                    "description": "Przygotowujemy kierunek wizualny i planujemy strukturę rozwiązania."
+                },
+                "develop": {
+                    "title": "Tworzymy",
+                    "description": "Przekładamy projekt na działającą stronę, dbając o szczegóły techniczne."
+                },
+                "deliver": {
+                    "title": "Uruchamiamy",
+                    "description": "Testujemy, wprowadzamy uzgodnione poprawki i przygotowujemy produkt do publikacji."
+                }
+            }
+        },
+        "technology": {
+            "eyebrow": "TECHNOLOGIE",
+            "title": "Nowoczesne narzędzia. Solidne rozwiązania."
+        },
+        "cta": {
+            "badge": "ROZPOCZNIJ WSPÓŁPRACĘ",
+            "title": "Masz pomysł?",
+            "highlight": "Zrealizujmy go.",
+            "description": "Niezależnie od tego, czy potrzebujesz nowoczesnej strony internetowej, czy bardziej zaawansowanego rozwiązania — poznaj możliwości AUREONWEB STUDIO.",
+            "button": "Sprawdź ofertę"
+        }
+    },
+    "OfferPage": {
+        "common": {
+            "currency": "zł",
+            "perMonth": "/mies.",
+            "from": "od"
+        },
+        "hero": {
+            "title": "Twoja firma zasługuje",
+            "highlight": "na lepszą stronę.",
+            "description": "Nowoczesny design, szybkie działanie i rozwiązania dopasowane do Twojego biznesu. Zacznij od strony, którą możesz rozwijać razem z firmą.",
+            "primary": "Sprawdź ofertę",
+            "secondary": "Porozmawiajmy",
+            "benefits": {
+                "responsive": "Responsywne projekty",
+                "transparent": "Przejrzysta wycena",
+                "scalable": "Możliwość rozbudowy"
+            }
+        },
+        "pricing": {
+            "eyebrow": "NASZE PAKIETY",
+            "title": "Dobry projekt.",
+            "highlight": "Rozsądna cena.",
+            "description": "Wybierz pakiet i zdecyduj, czy chcesz korzystać z naszej miesięcznej opieki.",
+            "popular": "POLECANY",
+            "saving": "{amount} zł mniej na start",
+            "oneTime": "Jednorazowo za wykonanie",
+            "included": "W pakiecie otrzymujesz:",
+            "choose": "Wybieram {name}",
+            "disclaimer": "Ceny są orientacyjne i nie stanowią wiążącej oferty. Ostateczna wycena zależy od zakresu projektu."
+        },
+        "care": {
+            "title": "Wybierz sposób utrzymania strony",
+            "description": "Zmień opcję, a ceny pakietów przeliczą się automatycznie.",
+            "discount": "Niższa cena wykonania",
+            "recommended": "Polecamy",
+            "disclaimer": "Abonament jest opcjonalny. Przy jego wyborze cena wykonania strony jest niższa, ale dochodzą opłaty miesięczne. Zakres opieki i warunki rezygnacji ustalamy przed zawarciem umowy.",
+            "plans": {
+                "none": {
+                    "name": "Bez abonamentu",
+                    "description": "Płacisz za wykonanie strony, bez miesięcznej opieki."
+                },
+                "basic": {
+                    "name": "Hosting + opieka",
+                    "description": "Hosting, SSL, monitoring dostępności i wsparcie techniczne."
+                },
+                "plus": {
+                    "name": "Opieka Plus",
+                    "description": "Wszystko z opieki podstawowej, drobne aktualizacje treści i priorytetowe wsparcie."
+                }
+            }
+        },
+        "packages": {
+            "starter": {
+                "subtitle": "Dobry start w internecie",
+                "description": "Elegancka strona wizytówka, dzięki której Twoja firma będzie wyglądać profesjonalnie.",
+                "features": {
+                    "1": "Nowoczesna strona internetowa",
+                    "2": "Do 3 sekcji",
+                    "3": "Wersja mobilna i komputerowa",
+                    "4": "Formularz kontaktowy",
+                    "5": "Podstawowe SEO",
+                    "6": "Linki do social media"
+                }
+            },
+            "business": {
+                "subtitle": "Dla firm, które chcą się wyróżnić",
+                "description": "Rozbudowana, nowoczesna strona nastawiona na prezentację usług i pozyskiwanie klientów.",
+                "features": {
+                    "1": "Wszystko z pakietu Starter",
+                    "2": "Do 7 sekcji",
+                    "3": "Nowoczesne animacje",
+                    "4": "Galeria zdjęć i realizacji",
+                    "5": "Rozbudowana prezentacja usług",
+                    "6": "Optymalizacja wydajności",
+                    "7": "Podstawowa analityka"
+                }
+            },
+            "premium": {
+                "subtitle": "Dla ambitnych projektów",
+                "description": "Indywidualna realizacja z rozbudowanym wyglądem i dodatkowymi funkcjami.",
+                "features": {
+                    "1": "Wszystko z pakietu Business",
+                    "2": "Indywidualny projekt",
+                    "3": "Rozbudowana struktura",
+                    "4": "Dodatkowe funkcjonalności",
+                    "5": "Wybrane integracje",
+                    "6": "Zaawansowane animacje",
+                    "7": "Rozszerzona optymalizacja"
+                }
+            }
+        },
+        "services": {
+            "eyebrow": "WIĘCEJ NIŻ STRONA",
+            "title": "Technologia, która",
+            "highlight": "pracuje dla Ciebie.",
+            "description": "Możemy zacząć od prostej strony, a później rozbudować ją o nowe funkcje i rozwiązania.",
+            "items": {
+                "webApps": {
+                    "title": "Aplikacje webowe",
+                    "description": "Panele klientów, systemy rezerwacji i dedykowane rozwiązania internetowe."
+                },
+                "automation": {
+                    "title": "Automatyzacje",
+                    "description": "Integracje, formularze i usprawnienia codziennej pracy."
+                },
+                "support": {
+                    "title": "Opieka techniczna",
+                    "description": "Pomoc w utrzymaniu strony i rozwiązywaniu problemów."
+                },
+                "consulting": {
+                    "title": "Konsultacje",
+                    "description": "Wspólnie ustalimy, jakie rozwiązanie najlepiej pasuje do Twojej firmy."
+                }
+            }
+        },
+        "process": {
+            "eyebrow": "JAK DZIAŁAMY",
+            "title": "Prosto i",
+            "highlight": "przejrzyście.",
+            "steps": {
+                "choose": {
+                    "title": "Wybierasz pakiet",
+                    "description": "Wybierz stronę i opcjonalną miesięczną opiekę."
+                },
+                "discuss": {
+                    "title": "Ustalamy szczegóły",
+                    "description": "Omawiamy projekt, materiały, termin i wycenę."
+                },
+                "build": {
+                    "title": "Realizujemy",
+                    "description": "Tworzymy stronę i informujemy Cię o postępach."
+                }
+            }
+        },
+        "faq": {
+            "title": "Masz pytania?",
+            "highlight": "Mamy odpowiedzi.",
+            "items": {
+                "1": {
+                    "question": "Czy abonament jest obowiązkowy?",
+                    "answer": "Nie. Możesz zamówić stronę bez abonamentu. W takim przypadku hosting, domenę i późniejsze utrzymanie organizujesz samodzielnie lub ustalamy je osobno."
+                },
+                "2": {
+                    "question": "Dlaczego strona z abonamentem jest tańsza?",
+                    "answer": "Przy wyborze miesięcznej opieki oferujemy niższą cenę wykonania strony. W zamian otrzymujesz usługę utrzymania z regularną opłatą. Całkowity koszt w dłuższym okresie będzie więc wyższy niż cena samego wykonania."
+                },
+                "3": {
+                    "question": "Czy mogę później zrezygnować z opieki?",
+                    "answer": "Warunki rezygnacji i przeniesienia strony zostaną określone w umowie przed zamówieniem. Nie zakładamy automatycznie długiego zobowiązania."
+                },
+                "4": {
+                    "question": "Ile trwa wykonanie strony?",
+                    "answer": "Termin zależy od zakresu projektu i dostępności materiałów. Przed rozpoczęciem współpracy ustalimy przewidywaną datę realizacji."
+                },
+                "5": {
+                    "question": "Czy mogę zamówić dodatkowe funkcje?",
+                    "answer": "Tak. Możemy indywidualnie wycenić dodatkowe podstrony, integracje, formularze lub aplikację webową."
+                },
+                "6": {
+                    "question": "Czy domena jest w cenie?",
+                    "answer": "Domena nie jest automatycznie wliczona w pakiet. Jej koszt i sposób rozliczenia ustalimy przed realizacją."
+                }
+            }
+        },
+        "cta": {
+            "eyebrow": "TWÓJ PROJEKT ZACZYNA SIĘ TUTAJ",
+            "title": "Zrób pierwszy krok.",
+            "highlight": "My zajmiemy się resztą.",
+            "description": "Masz pomysł na stronę lub aplikację? Porozmawiajmy o tym, jak możemy go zrealizować.",
+            "button": "Rozpocznij projekt"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "title": "Masz pomysł?",
+            "highlight": "Porozmawiajmy.",
+            "description": "Strona internetowa, aplikacja lub rozwiązanie dopasowane do Twojej firmy. Opowiedz nam o swoim projekcie, a wspólnie ustalimy kolejne kroki."
+        },
+        "info": {
+            "eyebrow": "SKONTAKTUJ SIĘ Z NAMI",
+            "title": "Stwórzmy coś razem.",
+            "description": "Nie musisz mieć gotowego planu ani znać wszystkich technicznych szczegółów. Wystarczy, że opiszesz, czego potrzebujesz.",
+            "onlineTitle": "Współpraca online",
+            "onlineDescription": "Realizujemy projekty zdalnie, niezależnie od lokalizacji Twojej firmy.",
+            "responseTitle": "Indywidualna odpowiedź",
+            "responseDescription": "Zapoznamy się z Twoim zgłoszeniem i odpowiemy, gdy przeanalizujemy zakres projektu.",
+            "securityTitle": "Bezpieczny kontakt",
+            "securityDescription": "Przekazane informacje wykorzystamy do obsługi Twojego zapytania."
+        },
+        "custom": {
+            "title": "Potrzebujesz czegoś więcej?",
+            "description": "Oprócz stron internetowych możemy omówić aplikacje webowe, systemy rezerwacji, panele klientów i automatyzacje.",
+            "action": "Opisz swój pomysł w formularzu"
+        },
+        "form": {
+            "eyebrow": "FORMULARZ KONTAKTOWY",
+            "title": "Opowiedz nam o projekcie",
+            "description": "Wypełnij formularz, a Twoja wiadomość trafi bezpośrednio do naszego systemu.",
+            "name": "Imię i nazwisko",
+            "namePlaceholder": "Jan Kowalski",
+            "email": "Adres e-mail",
+            "emailPlaceholder": "jan@firma.pl",
+            "projectType": "Rodzaj projektu",
+            "budget": "Orientacyjny budżet",
+            "select": "Wybierz rodzaj projektu",
+            "selectOptional": "Wybierz (opcjonalnie)",
+            "projectTypes": {
+                "website": "Strona internetowa",
+                "webapp": "Aplikacja webowa",
+                "automation": "Automatyzacja",
+                "other": "Inny projekt"
+            },
+            "budgets": {
+                "under500": "Do 500 zł",
+                "500to1500": "500–1500 zł",
+                "1500to5000": "1500–5000 zł",
+                "over5000": "Powyżej 5000 zł",
+                "unknown": "Jeszcze nie wiem"
+            },
+            "message": "Opisz swój projekt",
+            "messagePlaceholder": "Czym zajmuje się Twoja firma? Jakiej strony lub aplikacji potrzebujesz? Jakie funkcje są dla Ciebie ważne?",
+            "submit": "Wyślij wiadomość",
+            "sending": "Wysyłanie...",
+            "success": "Wiadomość została wysłana! Dziękujemy za kontakt.",
+            "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie później.",
+            "validation": "Sprawdź poprawność formularza i uzupełnij wymagane pola.",
+            "rateLimit": "Wysłano zbyt wiele zgłoszeń. Spróbuj ponownie później.",
+            "privacy": "Wysyłając formularz, przekazujesz dane w celu obsługi zapytania. Nie podawaj haseł ani innych poufnych informacji."
+        },
+        "bottom": {
+            "title": "Każdy projekt zaczyna się od rozmowy.",
+            "description": "Nie musisz od razu podejmować decyzji. Najpierw poznajmy Twoje potrzeby i możliwości realizacji.",
+            "back": "Wróć na górę"
+        }
+    },
+    "LoginPage": {
+        "back": "Wróć na stronę główną",
+        "eyebrow": "PANEL KLIENTA",
+        "title": "Witaj ponownie.",
+        "description": "Zaloguj się, aby zarządzać swoimi projektami i śledzić postępy realizacji.",
+        "email": "Adres e-mail",
+        "emailPlaceholder": "twoj@email.pl",
+        "emailError": "Podaj poprawny adres e-mail.",
+        "password": "Hasło",
+        "passwordPlaceholder": "Wprowadź swoje hasło",
+        "passwordError": "Wprowadź hasło.",
+        "showPassword": "Pokaż hasło",
+        "hidePassword": "Ukryj hasło",
+        "forgot": "Nie pamiętasz hasła?",
+        "forgotUnavailable": "Odzyskiwanie hasła będzie dostępne po uruchomieniu kont klientów.",
+        "submit": "Zaloguj się",
+        "demoNotice": "To wersja demonstracyjna. Logowanie będzie dostępne po podłączeniu systemu kont.",
+        "newHere": "Nie masz jeszcze konta?",
+        "register": "Utwórz konto",
+        "footerNote": "System kont w przygotowaniu",
+        "showcase": {
+            "badge": "TWOJA PRZESTRZEŃ",
+            "title": "Twój projekt.",
+            "highlight": "Pełna kontrola.",
+            "description": "Wszystko, czego potrzebujesz do zarządzania współpracą z AUREONWEB, w jednym miejscu."
+        },
+        "features": {
+            "security": {
+                "title": "Bezpieczne konto",
+                "description": "Docelowo Twoje projekty i dane będą dostępne tylko dla uprawnionych użytkowników."
+            },
+            "progress": {
+                "title": "Postępy w czasie rzeczywistym",
+                "description": "Sprawdzaj etapy realizacji i przewidywane terminy ukończenia projektu."
+            },
+            "access": {
+                "title": "Wszystko w jednym miejscu",
+                "description": "Zamówienia, projekty i komunikacja bez zbędnego chaosu."
+            }
+        }
+    },
+    "RegisterPage": {
+        "back": "Wróć na stronę główną",
+        "eyebrow": "DOŁĄCZ DO AUREONWEB",
+        "title": "Utwórz konto.",
+        "description": "Załóż konto klienta, aby w przyszłości wygodnie zarządzać swoimi projektami.",
+        "name": "Imię i nazwisko",
+        "namePlaceholder": "Jan Kowalski",
+        "nameError": "Wprowadź imię i nazwisko (minimum 2 znaki).",
+        "email": "Adres e-mail",
+        "emailPlaceholder": "twoj@email.pl",
+        "emailError": "Podaj poprawny adres e-mail.",
+        "password": "Hasło",
+        "passwordPlaceholder": "Utwórz silne hasło",
+        "passwordError": "Hasło nie spełnia wszystkich wymagań.",
+        "confirmPassword": "Potwierdź hasło",
+        "confirmPlaceholder": "Wpisz hasło ponownie",
+        "confirmError": "Hasła muszą być identyczne.",
+        "showPassword": "Pokaż hasło",
+        "hidePassword": "Ukryj hasło",
+        "requirements": {
+            "length": "Minimum 8 znaków",
+            "upper": "Wielka litera",
+            "lower": "Mała litera",
+            "number": "Cyfra"
+        },
+        "termsPrefix": "Akceptuję",
+        "terms": "regulamin",
+        "termsAnd": "oraz",
+        "privacy": "politykę prywatności",
+        "termsError": "Zaakceptuj regulamin i politykę prywatności.",
+        "submit": "Utwórz konto",
+        "demoNotice": "Formularz działa w trybie demonstracyjnym. Konto nie zostało utworzone. Rejestracja będzie dostępna po podłączeniu backendu.",
+        "alreadyHave": "Masz już konto?",
+        "login": "Zaloguj się",
+        "footerNote": "System kont w przygotowaniu",
+        "showcase": {
+            "badge": "NOWY POCZĄTEK",
+            "title": "Twoje pomysły.",
+            "highlight": "Nasza realizacja.",
+            "description": "Jedno miejsce do zarządzania projektami, komunikacją i postępami współpracy z AUREONWEB."
+        },
+        "features": {
+            "security": {
+                "title": "Bezpieczne konto",
+                "description": "Docelowo Twoje dane i projekty będą chronione przez system uwierzytelniania."
+            },
+            "progress": {
+                "title": "Śledzenie realizacji",
+                "description": "Zobaczysz status projektu, etapy pracy i przewidywany termin ukończenia."
+            },
+            "organization": {
+                "title": "Wygodne zarządzanie",
+                "description": "Wszystkie zamówienia i informacje o projektach w jednym panelu."
+            }
+        }
+    },
+    "OrderPage": {
+        "currencyLocale": "pl-PL",
+        "backToOffer": "Wróć do oferty",
+        "eyebrow": "ZAMÓWIENIE ONLINE",
+        "title": "Stwórzmy coś",
+        "highlight": "wyjątkowego.",
+        "description": "Wybierz pakiet, dostosuj usługę i opowiedz nam o swoim projekcie. Całość zajmie tylko kilka minut.",
+        "steps": {
+            "package": "Pakiet",
+            "configuration": "Konfiguracja",
+            "project": "Projekt",
+            "summary": "Podsumowanie"
+        },
+        "packageTitle": "Wybierz swój pakiet",
+        "packageDescription": "Wybierz rozwiązanie najlepiej dopasowane do Twoich potrzeb.",
+        "packages": {
+            "basic": "Prosta strona na dobry początek.",
+            "standard": "Więcej możliwości dla rozwijającej się firmy.",
+            "premium": "Rozbudowane rozwiązanie premium."
+        },
+        "configurationTitle": "Dostosuj swoją stronę",
+        "configurationDescription": "Wybierz rodzaj strony oraz dodatkowe usługi.",
+        "websiteType": "Rodzaj strony",
+        "types": {
+            "landing": "Landing page",
+            "business": "Strona firmowa",
+            "shop": "Sklep internetowy"
+        },
+        "included": "W cenie",
+        "extras": "Dodatkowe usługi",
+        "hosting": "Hosting i opieka",
+        "hostingDescription": "50 zł miesięcznie — opcja abonamentowa.",
+        "seo": "Podstawowa optymalizacja SEO",
+        "seoDescription": "Dodatkowa optymalizacja strony.",
+        "projectTitle": "Opowiedz nam o projekcie",
+        "projectDescription": "Im więcej informacji podasz, tym łatwiej będzie przygotować realizację.",
+        "businessName": "Nazwa firmy lub projektu",
+        "businessPlaceholder": "Np. Barber Studio",
+        "businessError": "Podaj nazwę (minimum 2 znaki).",
+        "contactEmail": "Adres e-mail do kontaktu",
+        "emailError": "Podaj poprawny adres e-mail.",
+        "projectDetails": "Opis projektu",
+        "detailsPlaceholder": "Czym zajmuje się Twoja firma? Jakie funkcje powinna mieć strona? Jakiego efektu oczekujesz?",
+        "detailsError": "Opis powinien mieć co najmniej 20 znaków.",
+        "inspiration": "Link do inspiracji (opcjonalnie)",
+        "summaryTitle": "Sprawdź zamówienie",
+        "summaryDescription": "Upewnij się, że wszystkie informacje są poprawne.",
+        "selectedPackage": "Pakiet",
+        "yes": "Tak",
+        "no": "Nie",
+        "demoNotice": "To wersja demonstracyjna. Zamówienie nie zostanie wysłane ani zapisane. Po integracji z kontem klienta będzie można je zatwierdzić.",
+        "demoSubmitted": "Konfiguracja została sprawdzona. To tylko demonstracja — zamówienie nie zostało utworzone.",
+        "previous": "Wstecz",
+        "next": "Dalej",
+        "submit": "Sprawdź konfigurację",
+        "yourOrder": "Twoje zamówienie",
+        "oneTime": "Cena jednorazowa",
+        "monthly": "Miesięcznie",
+        "priceNote": "Ceny orientacyjne. Ostateczna wycena zostanie potwierdzona przed rozpoczęciem realizacji."
+    }
+}

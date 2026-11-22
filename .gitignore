@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Build files
+dist/
+build/
+.next/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Uploaded files
+backend/uploads/
+
+# Generated Prisma client
+backend/generated/
+
+# AI coding tool files
+backend/.agents/
+backend/.claude/
+backend/.windsurf/

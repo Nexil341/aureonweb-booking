@@ -1,0 +1,808 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "offer": "Services",
+        "about": "About Us",
+        "howItWorks": "How it works",
+        "contact": "Contact",
+        "login": "Log In",
+        "register": "Sign Up",
+        "language": "Language"
+    },
+    "Home": {
+        "hero": {
+            "title": "We build websites",
+            "subtitle": "that",
+            "highlight": "make an impact.",
+            "description": "Modern websites, web applications, and digital solutions for businesses that want to stand out. We combine design with technology to create products tailored to your business needs.",
+            "offer": "Explore Our Services",
+            "contact": "Let's Talk",
+            "features": {
+                "design": "Modern Design",
+                "performance": "High-Performance Technology",
+                "approach": "Personalized Approach"
+            }
+        },
+        "services": {
+            "label": "WHAT WE DO",
+            "title": "Digital solutions that",
+            "highlight": "make a difference.",
+            "description": "We design and develop modern digital solutions that combine aesthetics, functionality, and performance.",
+            "more": "Learn More",
+            "items": {
+                "websites": {
+                    "title": "Websites",
+                    "description": "Modern, fast, and responsive websites that help businesses stand out online."
+                },
+                "webapps": {
+                    "title": "Web Applications",
+                    "description": "Custom web applications and online systems tailored to your business needs."
+                },
+                "digital": {
+                    "title": "Digital Solutions",
+                    "description": "Practical tools, integrations, and automations that streamline everyday business operations."
+                }
+            }
+        },
+        "about": {
+            "label": "WHY AUREONWEB",
+            "title": "More than a website.",
+            "highlight": "Your digital growth.",
+            "description1": "At AUREONWEB, we believe a great website should not only look professional but also support business growth.",
+            "description2": "That's why we focus on thoughtful design, modern technologies, and solutions tailored to real business needs.",
+            "more": "Explore Our Solutions",
+            "advantages": {
+                "technology": {
+                    "title": "Modern Technologies",
+                    "description": "We use proven technologies to build fast, efficient, and reliable digital products."
+                },
+                "quality": {
+                    "title": "Quality & Security",
+                    "description": "We prioritize quality, responsive design, and strong technical foundations."
+                },
+                "individual": {
+                    "title": "Personalized Approach",
+                    "description": "Every project is tailored to the needs, goals, and unique identity of your business."
+                }
+            }
+        },
+        "process": {
+            "label": "HOW WE WORK",
+            "title": "From idea to reality.",
+            "description": "A clear and transparent process that keeps you informed about every stage of your project.",
+            "steps": {
+                "choose": {
+                    "title": "Choose a Service",
+                    "description": "Explore our services and choose the solution that best fits your business."
+                },
+                "describe": {
+                    "title": "Tell Us About Your Project",
+                    "description": "Share your vision, expectations, and key requirements with us."
+                },
+                "development": {
+                    "title": "Development",
+                    "description": "We design and develop your solution according to the agreed scope and requirements."
+                },
+                "delivery": {
+                    "title": "Your Product Is Ready",
+                    "description": "Receive a completed website or application ready to launch."
+                }
+            }
+        },
+        "cta": {
+            "label": "LET'S WORK TOGETHER",
+            "title": "Have an idea?",
+            "highlight": "Let's bring it to life.",
+            "description": "Whether you need a professional website or a more advanced digital solution, we're here to help you get your project started.",
+            "button": "Explore Our Services"
+        },
+        "footer": {
+            "rights": "All rights reserved.",
+            "offer": "Our Services"
+        }
+    },
+    "Footer": {
+        "cta": {
+            "badge": "Your project starts here",
+            "title": "Have an idea?",
+            "highlight": "Let's build it together.",
+            "description": "Let's create a modern website tailored to your business.",
+            "button": "Start your project"
+        },
+        "brand": {
+            "description": "Modern websites and digital solutions for your business."
+        },
+        "navigation": {
+            "title": "Navigation",
+            "home": "Home",
+            "offer": "Offer",
+            "about": "About us",
+            "contact": "Contact"
+        },
+        "services": {
+            "title": "Services",
+            "websites": "Websites",
+            "webapps": "Web applications",
+            "automations": "Automations"
+        },
+        "contact": {
+            "email": "Email contact",
+            "location": "Poland",
+            "button": "Contact us"
+        },
+        "copyright": "All rights reserved.",
+        "credits": "Built with a passion for technology.",
+        "terms": "Terms of Service"
+    },
+    "HowItWorks": {
+        "hero": {
+            "badge": "Simple process. Professional results.",
+            "title": "From an idea",
+            "highlight": "to a live website.",
+            "description": "No confusion, unclear stages or guessing what's happening with your project. Discover the transparent AUREONWEB STUDIO process.",
+            "primary": "Explore packages",
+            "secondary": "Explore the process"
+        },
+        "preview": {
+            "subtitle": "Client dashboard preview",
+            "progressLabel": "Project progress",
+            "item1": "Order received",
+            "item2": "Requirements agreed",
+            "item3": "Project in progress",
+            "statusLabel": "Project status",
+            "status": "In progress",
+            "note": "In the future, you'll see updates about your order here.",
+            "disclaimer": "Illustrative preview — the client dashboard is under development."
+        },
+        "process": {
+            "eyebrow": "5 simple steps",
+            "title": "How we",
+            "highlight": "work together.",
+            "description": "From the first click to launch. Every stage has a clear purpose."
+        },
+        "steps": {
+            "choose": {
+                "title": "Choose your package",
+                "description": "Compare our packages and choose the solution that best fits your business needs and budget.",
+                "point1": "Starter / Business / Premium",
+                "point2": "Transparent pricing",
+                "point3": "Optional maintenance"
+            },
+            "brief": {
+                "title": "Tell us about your project",
+                "description": "Fill out a short form and describe your vision. Understanding your business helps us plan the right solution.",
+                "point1": "Contact information",
+                "point2": "Project requirements",
+                "point3": "Personalized planning"
+            },
+            "confirm": {
+                "title": "Confirm the details",
+                "description": "We agree on the scope, price and terms. Once approved, we can begin working on your project.",
+                "point1": "Agreed scope",
+                "point2": "Clear terms",
+                "point3": "Order confirmation"
+            },
+            "progress": {
+                "title": "Follow your project's progress",
+                "description": "We keep you informed about each stage. Eventually, project status and estimated delivery will be available in your client dashboard.",
+                "point1": "Project milestones",
+                "point2": "Status updates",
+                "point3": "Estimated delivery"
+            },
+            "launch": {
+                "title": "Launch your website",
+                "description": "After development, we test the website, make agreed revisions and prepare everything for launch.",
+                "point1": "Testing and review",
+                "point2": "Project approval",
+                "point3": "Website launch"
+            }
+        },
+        "benefits": {
+            "eyebrow": "Why AUREONWEB",
+            "title": "A simpler way to work together.",
+            "description": "Clear communication, a thoughtful process and digital solutions tailored to your business.",
+            "transparent": {
+                "title": "Transparent terms",
+                "description": "Know exactly what's included in your order and the terms of your project."
+            },
+            "control": {
+                "title": "Project visibility",
+                "description": "We share updates and milestones. We're also developing a convenient client dashboard."
+            },
+            "quality": {
+                "title": "Attention to detail",
+                "description": "We create modern, responsive solutions focused on design and usability."
+            }
+        },
+        "faq": {
+            "title": "Frequently asked questions",
+            "items": [
+                {
+                    "question": "Do I need a subscription?",
+                    "answer": "No. You can order a project without a subscription. Optional maintenance plans include additional services, with full details available before confirmation."
+                },
+                {
+                    "question": "How long does a website take?",
+                    "answer": "Delivery depends on the scope and complexity of the project. We agree on an estimated timeline individually."
+                },
+                {
+                    "question": "Can I request revisions?",
+                    "answer": "Yes. The scope and number of revisions depend on your chosen package and the terms agreed before development."
+                },
+                {
+                    "question": "Can I track project progress?",
+                    "answer": "We'll keep you updated during development. A client dashboard with project status tracking is currently being built."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready for",
+            "highlight": "your own website?",
+            "description": "Choose the package that fits your business and let's discuss your project.",
+            "button": "View packages"
+        }
+    },
+    "Terms": {
+        "metaTitle": "Terms of Service | AUREONWEB STUDIO",
+        "metaDescription": "Terms of Service for AUREONWEB STUDIO.",
+        "back": "Back to homepage",
+        "eyebrow": "LEGAL DOCUMENTS",
+        "title": "Terms of Service",
+        "description": "Learn about our website development services, project delivery process and terms of cooperation.",
+        "version": "Draft version — before the launch of paid services",
+        "warningTitle": "Document in preparation",
+        "warningDescription": "These Terms are currently a draft. Before paid services become available, the required provider details and complete service conditions will be added.",
+        "contents": "TABLE OF CONTENTS",
+        "contactTitle": "Have questions?",
+        "contactDescription": "Contact us if you would like to learn more about our services and terms of cooperation.",
+        "contactButton": "Contact us",
+        "sections": {
+            "general": {
+                "title": "General provisions",
+                "items": {
+                    "1": "AUREONWEB STUDIO offers website design, development and maintenance services for businesses and individual customers.",
+                    "2": "The website operates at aureonweb.com.",
+                    "3": "Contact: nexilsbusinesss@gmail.com.",
+                    "4": "Services are provided under these Terms and the offer accepted by the customer."
+                }
+            },
+            "orders": {
+                "title": "Orders",
+                "items": {
+                    "1": "Placing an order requires creating a free customer account.",
+                    "2": "The customer selects a package and provides the information required to complete the project.",
+                    "3": "The price, scope of work, number of revision rounds and delivery date are agreed individually before an order is accepted.",
+                    "4": "Submitting an inquiry does not create an obligation to pay.",
+                    "5": "An order is accepted after both parties confirm the agreed conditions electronically. A separate paper agreement is not required."
+                }
+            },
+            "payments": {
+                "title": "Project delivery and payments",
+                "items": {
+                    "1": "The project is completed in accordance with the agreed scope.",
+                    "2": "The customer provides materials they are legally entitled to use.",
+                    "3": "The completed website is made available for review and acceptance.",
+                    "4": "Payment is due within 3 days of project acceptance.",
+                    "5": "Available payment methods include bank transfer and Stripe once this option has been enabled.",
+                    "6": "Additional work requires prior agreement on pricing."
+                }
+            },
+            "hosting": {
+                "title": "Hosting and technical support",
+                "items": {
+                    "1": "Customers may use their own hosting or hosting provided by AUREONWEB STUDIO.",
+                    "2": "Technical support is an optional service.",
+                    "3": "Subscriptions renew automatically every month after the customer accepts the recurring payment conditions.",
+                    "4": "Customers may cancel renewal at any time. The service ends when the paid billing period expires.",
+                    "5": "Pricing, support coverage and hosting conditions are provided before purchase.",
+                    "6": "Ending technical support does not automatically terminate the license to use the completed website."
+                }
+            },
+            "copyright": {
+                "title": "Copyright and licensing",
+                "items": {
+                    "1": "After the project has been paid for, the customer receives a non-exclusive license to use the website for its intended purpose, including commercial use.",
+                    "2": "The detailed scope of website use, modification and distribution is defined in the accepted order conditions.",
+                    "3": "Third-party materials and software remain subject to their respective licenses."
+                }
+            },
+            "complaints": {
+                "title": "Complaints and withdrawal",
+                "items": {
+                    "1": "Complaints may be submitted to nexilsbusinesss@gmail.com.",
+                    "2": "Complaints are handled in accordance with applicable law.",
+                    "3": "Consumers generally have the right to withdraw from a distance contract within 14 days, subject to statutory exceptions.",
+                    "4": "Starting work before the withdrawal period expires and any related payment obligations are governed by applicable law.",
+                    "5": "These Terms do not restrict statutory consumer rights."
+                }
+            },
+            "privacy": {
+                "title": "Personal data",
+                "items": {
+                    "1": "Personal data is processed to manage customer accounts, handle orders and provide services.",
+                    "2": "Further information about personal data processing is available in the Privacy Policy.",
+                    "3": "Information about cookies is available in the Cookie Policy."
+                }
+            },
+            "final": {
+                "title": "Final provisions",
+                "items": {
+                    "1": "These Terms are governed by Polish law, without prejudice to mandatory consumer protection rights.",
+                    "2": "These Terms are made available electronically in a format that allows users to save and reproduce them.",
+                    "3": "Changes to these Terms do not affect rights arising from previously concluded agreements."
+                }
+            }
+        }
+    },
+    "AboutPage": {
+        "metaTitle": "About Us | AUREONWEB STUDIO",
+        "metaDescription": "Discover AUREONWEB STUDIO and our approach to modern web design and development.",
+        "hero": {
+            "badge": "DISCOVER AUREONWEB STUDIO",
+            "title": "More than",
+            "highlight": "just a website.",
+            "description": "We create modern digital experiences that combine aesthetics, technology, and real business needs. Every project is an opportunity to build something valuable.",
+            "primary": "Explore services",
+            "secondary": "Our philosophy",
+            "visualTag": "Thoughtful design"
+        },
+        "philosophy": {
+            "eyebrow": "OUR PHILOSOPHY",
+            "title": "Great design is",
+            "highlight": "just the beginning.",
+            "description1": "At AUREONWEB STUDIO, we believe a professional website should do much more than look good. It should be fast, intuitive, and support business goals.",
+            "description2": "We combine a creative approach with modern technologies. Instead of random solutions, we focus on thoughtful projects, clear communication, and attention to detail.",
+            "cardTitle": "Designed with purpose.",
+            "cardDescription": "Every design decision should have a reason. From layout to functionality, everything is built around users and client needs."
+        },
+        "values": {
+            "eyebrow": "WHAT MATTERS TO US",
+            "title": "Our approach to quality.",
+            "description": "We focus on the fundamentals that matter both during development and after launch.",
+            "items": {
+                "design": {
+                    "title": "Thoughtful design",
+                    "description": "Modern aesthetics combined with clarity, intuitive navigation, and a comfortable user experience."
+                },
+                "performance": {
+                    "title": "Speed and performance",
+                    "description": "We build solutions focused on smooth operation, responsiveness, and a great user experience."
+                },
+                "quality": {
+                    "title": "Quality development",
+                    "description": "We pay attention to details, code structure, and strong technical foundations."
+                },
+                "approach": {
+                    "title": "Personalized approach",
+                    "description": "We understand each client's needs and tailor solutions to the project instead of following a one-size-fits-all approach."
+                }
+            }
+        },
+        "process": {
+            "eyebrow": "HOW WE WORK",
+            "title": "From idea to execution.",
+            "description": "A transparent workflow helps us focus on what matters most — building a great product.",
+            "steps": {
+                "discover": {
+                    "title": "Discover",
+                    "description": "We discuss project goals, requirements, and expectations."
+                },
+                "design": {
+                    "title": "Design",
+                    "description": "We establish the visual direction and plan the structure."
+                },
+                "develop": {
+                    "title": "Develop",
+                    "description": "We turn the design into a working website with attention to technical details."
+                },
+                "deliver": {
+                    "title": "Launch",
+                    "description": "We test, apply agreed revisions, and prepare the product for release."
+                }
+            }
+        },
+        "technology": {
+            "eyebrow": "TECHNOLOGIES",
+            "title": "Modern tools. Reliable solutions."
+        },
+        "cta": {
+            "badge": "START A PROJECT",
+            "title": "Have an idea?",
+            "highlight": "Let's build it.",
+            "description": "Whether you need a modern website or a more advanced digital solution, explore what AUREONWEB STUDIO can offer.",
+            "button": "Explore services"
+        }
+    },
+    "OfferPage": {
+        "common": {
+            "currency": "PLN",
+            "perMonth": "/month",
+            "from": "from"
+        },
+        "hero": {
+            "title": "Your business deserves",
+            "highlight": "a better website.",
+            "description": "Modern design, fast performance and solutions tailored to your business. Start with a website that can grow alongside your company.",
+            "primary": "Explore our packages",
+            "secondary": "Let's talk",
+            "benefits": {
+                "responsive": "Responsive design",
+                "transparent": "Transparent pricing",
+                "scalable": "Built to grow"
+            }
+        },
+        "pricing": {
+            "eyebrow": "OUR PACKAGES",
+            "title": "Great design.",
+            "highlight": "Fair pricing.",
+            "description": "Choose your package and decide whether you want ongoing monthly website care.",
+            "popular": "MOST POPULAR",
+            "saving": "Save {amount} PLN upfront",
+            "oneTime": "One-time development cost",
+            "included": "What's included:",
+            "choose": "Choose {name}",
+            "disclaimer": "Prices are estimates and do not constitute a binding offer. Final pricing depends on the project scope."
+        },
+        "care": {
+            "title": "Choose your website care plan",
+            "description": "Change your selection to automatically update package prices.",
+            "discount": "Lower upfront cost",
+            "recommended": "Recommended",
+            "disclaimer": "Subscriptions are optional. Choosing a care plan reduces the initial development cost but adds monthly fees. The scope of support and cancellation terms are agreed upon before signing a contract.",
+            "plans": {
+                "none": {
+                    "name": "No subscription",
+                    "description": "Pay for website development without a monthly maintenance plan."
+                },
+                "basic": {
+                    "name": "Hosting + Care",
+                    "description": "Hosting, SSL, uptime monitoring and technical support."
+                },
+                "plus": {
+                    "name": "Care Plus",
+                    "description": "Everything in Basic Care, minor content updates and priority support."
+                }
+            }
+        },
+        "packages": {
+            "starter": {
+                "subtitle": "A great start online",
+                "description": "An elegant business website that helps your company build a professional online presence.",
+                "features": {
+                    "1": "Modern website",
+                    "2": "Up to 3 sections",
+                    "3": "Mobile and desktop versions",
+                    "4": "Contact form",
+                    "5": "Basic SEO",
+                    "6": "Social media links"
+                }
+            },
+            "business": {
+                "subtitle": "For businesses ready to stand out",
+                "description": "A modern, feature-rich website designed to showcase your services and attract customers.",
+                "features": {
+                    "1": "Everything in Starter",
+                    "2": "Up to 7 sections",
+                    "3": "Modern animations",
+                    "4": "Photo and project gallery",
+                    "5": "Detailed service presentation",
+                    "6": "Performance optimization",
+                    "7": "Basic analytics"
+                }
+            },
+            "premium": {
+                "subtitle": "For ambitious projects",
+                "description": "A custom-built solution with advanced design and additional functionality.",
+                "features": {
+                    "1": "Everything in Business",
+                    "2": "Custom design",
+                    "3": "Advanced website structure",
+                    "4": "Additional functionality",
+                    "5": "Selected integrations",
+                    "6": "Advanced animations",
+                    "7": "Extended optimization"
+                }
+            }
+        },
+        "services": {
+            "eyebrow": "MORE THAN A WEBSITE",
+            "title": "Technology that",
+            "highlight": "works for you.",
+            "description": "We can start with a simple website and expand it with new features and solutions as your business grows.",
+            "items": {
+                "webApps": {
+                    "title": "Web applications",
+                    "description": "Customer dashboards, booking systems and custom web solutions."
+                },
+                "automation": {
+                    "title": "Automation",
+                    "description": "Integrations, forms and tools that streamline everyday operations."
+                },
+                "support": {
+                    "title": "Technical support",
+                    "description": "Help with website maintenance and troubleshooting."
+                },
+                "consulting": {
+                    "title": "Consulting",
+                    "description": "Together, we'll identify the solution that best fits your business."
+                }
+            }
+        },
+        "process": {
+            "eyebrow": "HOW WE WORK",
+            "title": "Simple and",
+            "highlight": "transparent.",
+            "steps": {
+                "choose": {
+                    "title": "Choose a package",
+                    "description": "Select your website package and optional monthly care."
+                },
+                "discuss": {
+                    "title": "Discuss the details",
+                    "description": "We review your project, materials, timeline and final pricing."
+                },
+                "build": {
+                    "title": "We build it",
+                    "description": "We create your website and keep you updated on progress."
+                }
+            }
+        },
+        "faq": {
+            "title": "Have questions?",
+            "highlight": "We have answers.",
+            "items": {
+                "1": {
+                    "question": "Is a subscription required?",
+                    "answer": "No. You can order a website without a subscription. In that case, you arrange hosting, your domain and future maintenance yourself, or we agree on these services separately."
+                },
+                "2": {
+                    "question": "Why is development cheaper with a subscription?",
+                    "answer": "Choosing monthly website care allows us to offer a lower initial development price. In return, you receive ongoing maintenance for a recurring fee. The total cost over time will therefore be higher than the development price alone."
+                },
+                "3": {
+                    "question": "Can I cancel website care later?",
+                    "answer": "Cancellation and website transfer terms will be specified in the agreement before ordering. We do not automatically assume a long-term commitment."
+                },
+                "4": {
+                    "question": "How long does development take?",
+                    "answer": "The timeline depends on the project scope and availability of materials. We agree on an estimated completion date before work begins."
+                },
+                "5": {
+                    "question": "Can I request additional features?",
+                    "answer": "Yes. We can provide custom pricing for additional pages, integrations, forms or a web application."
+                },
+                "6": {
+                    "question": "Is a domain included?",
+                    "answer": "A domain is not automatically included in the package. Its cost and billing arrangements are agreed upon before development begins."
+                }
+            }
+        },
+        "cta": {
+            "eyebrow": "YOUR PROJECT STARTS HERE",
+            "title": "Take the first step.",
+            "highlight": "We'll handle the rest.",
+            "description": "Have an idea for a website or application? Let's discuss how we can bring it to life.",
+            "button": "Start your project"
+        }
+    },
+    "ContactPage": {
+        "hero": {
+            "title": "Have an idea?",
+            "highlight": "Let's talk.",
+            "description": "A website, application or solution tailored to your business. Tell us about your project and we'll work out the next steps together."
+        },
+        "info": {
+            "eyebrow": "GET IN TOUCH",
+            "title": "Let's build something together.",
+            "description": "You don't need a complete plan or technical knowledge. Simply tell us what your business needs.",
+            "onlineTitle": "Remote collaboration",
+            "onlineDescription": "We work with businesses remotely, regardless of their location.",
+            "responseTitle": "Personal response",
+            "responseDescription": "We'll review your inquiry and respond after considering the project scope.",
+            "securityTitle": "Secure communication",
+            "securityDescription": "We use the information you provide to handle your inquiry."
+        },
+        "custom": {
+            "title": "Need something more?",
+            "description": "Beyond websites, we can discuss web applications, booking systems, customer dashboards and automation.",
+            "action": "Describe your idea in the form"
+        },
+        "form": {
+            "eyebrow": "CONTACT FORM",
+            "title": "Tell us about your project",
+            "description": "Complete the form and your message will be sent directly to our system.",
+            "name": "Full name",
+            "namePlaceholder": "John Smith",
+            "email": "Email address",
+            "emailPlaceholder": "john@company.com",
+            "projectType": "Project type",
+            "budget": "Estimated budget",
+            "select": "Select project type",
+            "selectOptional": "Select (optional)",
+            "projectTypes": {
+                "website": "Website",
+                "webapp": "Web application",
+                "automation": "Automation",
+                "other": "Other project"
+            },
+            "budgets": {
+                "under500": "Up to 500 PLN",
+                "500to1500": "500–1,500 PLN",
+                "1500to5000": "1,500–5,000 PLN",
+                "over5000": "Over 5,000 PLN",
+                "unknown": "Not sure yet"
+            },
+            "message": "Describe your project",
+            "messagePlaceholder": "What does your business do? What kind of website or application do you need? Which features matter most?",
+            "submit": "Send message",
+            "sending": "Sending...",
+            "success": "Your message has been sent! Thank you for contacting us.",
+            "error": "We couldn't send your message. Please try again later.",
+            "validation": "Please check the form and complete all required fields.",
+            "rateLimit": "Too many requests. Please try again later.",
+            "privacy": "By submitting this form, you provide your details so we can respond to your inquiry. Do not include passwords or other confidential information."
+        },
+        "bottom": {
+            "title": "Every project starts with a conversation.",
+            "description": "You don't have to make a decision right away. Let's first discuss your needs and what's possible.",
+            "back": "Back to top"
+        }
+    },
+    "LoginPage": {
+        "back": "Back to homepage",
+        "eyebrow": "CLIENT PORTAL",
+        "title": "Welcome back.",
+        "description": "Sign in to manage your projects and track their progress.",
+        "email": "Email address",
+        "emailPlaceholder": "you@example.com",
+        "emailError": "Enter a valid email address.",
+        "password": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "passwordError": "Enter your password.",
+        "showPassword": "Show password",
+        "hidePassword": "Hide password",
+        "forgot": "Forgot password?",
+        "forgotUnavailable": "Password recovery will be available when client accounts launch.",
+        "submit": "Sign in",
+        "demoNotice": "This is a demo. Sign-in will be available once the account system is connected.",
+        "newHere": "Don't have an account?",
+        "register": "Create an account",
+        "footerNote": "Account system coming soon",
+        "showcase": {
+            "badge": "YOUR WORKSPACE",
+            "title": "Your project.",
+            "highlight": "Full control.",
+            "description": "Everything you need to manage your collaboration with AUREONWEB, all in one place."
+        },
+        "features": {
+            "security": {
+                "title": "Secure account",
+                "description": "Your projects and data will be accessible only to authorized users when the account system launches."
+            },
+            "progress": {
+                "title": "Real-time progress",
+                "description": "Track project milestones and estimated completion dates."
+            },
+            "access": {
+                "title": "Everything in one place",
+                "description": "Orders, projects and communication without unnecessary complexity."
+            }
+        }
+    },
+    "RegisterPage": {
+        "back": "Back to homepage",
+        "eyebrow": "JOIN AUREONWEB",
+        "title": "Create an account.",
+        "description": "Create a client account to manage your projects conveniently in the future.",
+        "name": "Full name",
+        "namePlaceholder": "John Smith",
+        "nameError": "Enter your full name (at least 2 characters).",
+        "email": "Email address",
+        "emailPlaceholder": "you@example.com",
+        "emailError": "Enter a valid email address.",
+        "password": "Password",
+        "passwordPlaceholder": "Create a strong password",
+        "passwordError": "Your password does not meet all requirements.",
+        "confirmPassword": "Confirm password",
+        "confirmPlaceholder": "Enter your password again",
+        "confirmError": "Passwords must match.",
+        "showPassword": "Show password",
+        "hidePassword": "Hide password",
+        "requirements": {
+            "length": "At least 8 characters",
+            "upper": "Uppercase letter",
+            "lower": "Lowercase letter",
+            "number": "Number"
+        },
+        "termsPrefix": "I accept the",
+        "terms": "terms of service",
+        "termsAnd": "and",
+        "privacy": "privacy policy",
+        "termsError": "Accept the terms of service and privacy policy.",
+        "submit": "Create account",
+        "demoNotice": "This form is a demo. No account has been created. Registration will be available once the backend is connected.",
+        "alreadyHave": "Already have an account?",
+        "login": "Sign in",
+        "footerNote": "Account system coming soon",
+        "showcase": {
+            "badge": "A NEW BEGINNING",
+            "title": "Your ideas.",
+            "highlight": "Our execution.",
+            "description": "One place to manage projects, communication and progress with AUREONWEB."
+        },
+        "features": {
+            "security": {
+                "title": "Secure account",
+                "description": "Your data and projects will be protected by an authentication system when accounts launch."
+            },
+            "progress": {
+                "title": "Project tracking",
+                "description": "View project status, work milestones and estimated completion dates."
+            },
+            "organization": {
+                "title": "Easy management",
+                "description": "All orders and project information in one dashboard."
+            }
+        }
+    },
+    "OrderPage": {
+        "currencyLocale": "en-GB",
+        "backToOffer": "Back to offers",
+        "eyebrow": "ONLINE ORDER",
+        "title": "Let's create something",
+        "highlight": "extraordinary.",
+        "description": "Choose a package, customize your service and tell us about your project. It only takes a few minutes.",
+        "steps": {
+            "package": "Package",
+            "configuration": "Configuration",
+            "project": "Project",
+            "summary": "Summary"
+        },
+        "packageTitle": "Choose your package",
+        "packageDescription": "Select the solution that best fits your needs.",
+        "packages": {
+            "basic": "A simple website to get started.",
+            "standard": "More possibilities for a growing business.",
+            "premium": "An advanced premium solution."
+        },
+        "configurationTitle": "Customize your website",
+        "configurationDescription": "Select the website type and additional services.",
+        "websiteType": "Website type",
+        "types": {
+            "landing": "Landing page",
+            "business": "Business website",
+            "shop": "Online store"
+        },
+        "included": "Included",
+        "extras": "Additional services",
+        "hosting": "Hosting and maintenance",
+        "hostingDescription": "PLN 50 per month — subscription option.",
+        "seo": "Basic SEO optimization",
+        "seoDescription": "Additional website optimization.",
+        "projectTitle": "Tell us about your project",
+        "projectDescription": "The more information you provide, the easier it will be to prepare your project.",
+        "businessName": "Business or project name",
+        "businessPlaceholder": "e.g. Barber Studio",
+        "businessError": "Enter a name (at least 2 characters).",
+        "contactEmail": "Contact email address",
+        "emailError": "Enter a valid email address.",
+        "projectDetails": "Project description",
+        "detailsPlaceholder": "What does your business do? What features should your website have? What results do you expect?",
+        "detailsError": "Your description must be at least 20 characters.",
+        "inspiration": "Inspiration link (optional)",
+        "summaryTitle": "Review your order",
+        "summaryDescription": "Make sure all the information is correct.",
+        "selectedPackage": "Package",
+        "yes": "Yes",
+        "no": "No",
+        "demoNotice": "This is a demo. Your order will not be sent or saved. You will be able to confirm it after account integration.",
+        "demoSubmitted": "Your configuration has been checked. This is only a demo — no order has been created.",
+        "previous": "Back",
+        "next": "Continue",
+        "submit": "Review configuration",
+        "yourOrder": "Your order",
+        "oneTime": "One-time price",
+        "monthly": "Monthly",
+        "priceNote": "Prices are estimates. The final quote will be confirmed before work begins."
+    }
+}

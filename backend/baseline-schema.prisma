@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model orders {
+  id             Int       @id @default(autoincrement())
+  customer_name  String    @db.VarChar(100)
+  customer_email String    @db.VarChar(255)
+  package        String    @db.VarChar(50)
+  hosting        Boolean   @default(false)
+  price          Int
+  payment_status String    @default("PENDING") @db.VarChar(20)
+  order_status   String    @default("NEW") @db.VarChar(20)
+  created_at     DateTime? @default(now()) @db.Timestamp(6)
+}
