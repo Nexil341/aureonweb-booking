@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 
 const { betterAuth } = require("better-auth");
@@ -105,8 +104,14 @@ const auth = betterAuth({
         process.env.FRONTEND_URL || "http://localhost:3000",
     ],
 
+    // ==========================================
+    // LOGOWANIE E-MAIL + HASŁO, RESET HASŁA
+    // ==========================================
     emailAndPassword: {
         enabled: true,
+
+        // Logowanie możliwe dopiero po potwierdzeniu e-maila.
+        requireEmailVerification: true,
 
         resetPasswordTokenExpiresIn: 3600,
 
@@ -125,8 +130,15 @@ const auth = betterAuth({
         },
     },
 
+    // ==========================================
+    // WERYFIKACJA E-MAILA LINKIEM
+    // (używana przy zmianie adresu e-mail)
+    // ==========================================
     emailVerification: {
         expiresIn: 3600,
+
+        // Po poprawnej weryfikacji użytkownik jest od razu zalogowany.
+        autoSignInAfterVerification: true,
 
         sendVerificationEmail: async ({ user, url }) => {
             await sendEmail({
@@ -141,9 +153,11 @@ const auth = betterAuth({
                 }),
             });
         },
-
     },
 
+    // ==========================================
+    // ZMIANA ADRESU E-MAIL
+    // ==========================================
     user: {
         changeEmail: {
             enabled: true,
@@ -170,13 +184,16 @@ const auth = betterAuth({
         },
     },
 
-
+    // ==========================================
+    // KOD WERYFIKACYJNY PRZY REJESTRACJI
+    // ==========================================
     plugins: [
         emailOTP({
             otpLength: 6,
             expiresIn: 600,       // 10 minut
             allowedAttempts: 5,   // po 5 błędnych próbach kod przepada
             sendVerificationOnSignUp: true,
+
             // false: kod tylko przy rejestracji.
             // Zmiana e-maila musi używać linku z tokenem (niesie nowy adres),
             // dlatego nie podmieniamy domyślnej weryfikacji na kody.
@@ -190,7 +207,7 @@ const auth = betterAuth({
                 }
 
                 // Tylko w trybie deweloperskim: kod w terminalu,
-                // żeby dało się testować bez zweryfikowanej domeny.
+                // żeby dało się testować bez dostępu do skrzynki.
                 if (process.env.NODE_ENV !== "production") {
                     console.log(`[DEV] Kod weryfikacyjny dla ${email}: ${otp}`);
                 }
@@ -200,7 +217,8 @@ const auth = betterAuth({
                     subject: "Kod weryfikacyjny — AUREONWEB",
                     html: codeEmailTemplate({
                         title: "Potwierdź adres e-mail",
-                        message: "Wpisz poniższy kod na stronie AUREONWEB, aby zweryfikować swoje konto.",
+                        message:
+                            "Wpisz poniższy kod na stronie AUREONWEB, aby zweryfikować swoje konto.",
                         code: otp,
                     }),
                 });

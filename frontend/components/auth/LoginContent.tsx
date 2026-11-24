@@ -51,6 +51,23 @@ export default function LoginContent() {
             });
 
             if (result.error) {
+                // Hasło poprawne, ale e-mail niezweryfikowany:
+                // wysyłamy nowy kod i przenosimy na stronę weryfikacji.
+                if (result.error.code === "EMAIL_NOT_VERIFIED") {
+                    const cleanEmail = email.trim().toLowerCase();
+
+                    await authClient.emailOtp.sendVerificationOtp({
+                        email: cleanEmail,
+                        type: "email-verification",
+                    });
+
+                    router.replace({
+                        pathname: "/weryfikacja-email",
+                        query: { email: cleanEmail },
+                    });
+                    return;
+                }
+
                 setError(
                     result.error.status === 401 ||
                         result.error.code === "INVALID_EMAIL_OR_PASSWORD"
