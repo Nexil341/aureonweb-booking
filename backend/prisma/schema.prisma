@@ -27,6 +27,18 @@ model orders {
   description   String? @db.Text
   inspiration   String? @db.Text
   contact_email String? @db.VarChar(255)
+  phone         String? @db.VarChar(30)
+
+  // Domena klienta (puste = klient nie ma domeny)
+  domain String? @db.VarChar(255)
+
+  // Preferowany przez klienta termin. Osobno od `deadline`,
+  // które ustawia administrator podczas realizacji.
+  desired_deadline DateTime? @db.Date
+
+  // Materiały, które klient już posiada
+  // (logo, photos, texts, need_help)
+  materials String[] @default([])
 
   // Cena jednorazowa w groszach
   price Int
