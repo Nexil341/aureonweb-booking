@@ -104,15 +104,12 @@ export default function RegisterContent() {
                 return;
             }
 
-            // Better Auth standardowo tworzy sesję po rejestracji.
-            // Jeśli w backendzie wyłączono automatyczne logowanie,
-            // użytkownik powinien zalogować się ręcznie.
-            if (data.token) {
-                router.replace("/moje-zamowienia");
-            } else {
-                router.replace("/logowanie");
-            }
-
+            // Po rejestracji klient musi potwierdzić e-mail kodem.
+            // Kod został już wysłany przez backend (sendVerificationOnSignUp).
+            router.replace({
+                pathname: "/weryfikacja-email",
+                query: { email: email.trim().toLowerCase() },
+            });
             router.refresh();
         } catch {
             setRegisterError(
@@ -383,8 +380,8 @@ export default function RegisterContent() {
                                             <div
                                                 key={item.label}
                                                 className={`flex items-center gap-2 text-xs ${item.valid
-                                                        ? "text-emerald-400"
-                                                        : "text-zinc-500"
+                                                    ? "text-emerald-400"
+                                                    : "text-zinc-500"
                                                     }`}
                                             >
                                                 <Check className="h-3.5 w-3.5 shrink-0" />
