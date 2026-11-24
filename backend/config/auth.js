@@ -177,7 +177,10 @@ const auth = betterAuth({
             expiresIn: 600,       // 10 minut
             allowedAttempts: 5,   // po 5 błędnych próbach kod przepada
             sendVerificationOnSignUp: true,
-            overrideDefaultEmailVerification: true,
+            // false: kod tylko przy rejestracji.
+            // Zmiana e-maila musi używać linku z tokenem (niesie nowy adres),
+            // dlatego nie podmieniamy domyślnej weryfikacji na kody.
+            overrideDefaultEmailVerification: false,
 
             async sendVerificationOTP({ email, otp, type }) {
                 // Na razie obsługujemy tylko weryfikację e-maila.
