@@ -133,11 +133,26 @@ const getAllOrders = async () => {
     return ordersRepository.getAllOrders();
 };
 
+// Statusy, które wymagają opłaconego zamówienia.
+const STATUSES_REQUIRING_PAYMENT = ["IN_PROGRESS", "COMPLETED"];
+
 const updateOrderStatus = async (id, status) => {
     const order = await ordersRepository.getOrderById(id);
 
     if (!order) {
         throw createError("Nie znaleziono zamówienia", 404);
+    }
+
+    // Ta sama reguła co w updateOrderProgress:
+    // nie zaczynamy ani nie kończymy pracy bez płatności.
+    if (
+        STATUSES_REQUIRING_PAYMENT.includes(status) &&
+        order.payment_status !== "PAID"
+    ) {
+        throw createError(
+            "Nie można zmienić statusu nieopłaconego zamówienia na realizowane lub ukończone",
+            409
+        );
     }
 
     return ordersRepository.updateOrderStatus(id, status);
