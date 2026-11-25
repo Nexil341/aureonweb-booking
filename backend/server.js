@@ -33,14 +33,48 @@ app.use(cors({
     credentials: true
 }));
 
-const limiter = rateLimit({
+// Ogólny limit dla całego API.
+// Panel klienta i administratora odpytują serwer co kilka sekund
+// (czat), więc limit musi to wytrzymać z dużym zapasem.
+const apiLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    limit: 100,
+    limit: 1000,
     standardHeaders: "draft-8",
-    legacyHeaders: false
+    legacyHeaders: false,
+    // Stripe chroni podpis webhooka — nie blokujemy go limitem.
+    skip: (req) => req.path === "/payments/webhook",
+    message: {
+        error: "Zbyt wiele zapytań. Spróbuj ponownie za chwilę."
+    }
+
 });
 
-app.use("/api", limiter);
+// Ostry limit dla operacji narażonych na ataki:
+// zgadywanie haseł, masowe rejestracje, spam e-mailami.
+const authLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    limit: 10,
+    standardHeaders: "draft-8",
+    legacyHeaders: false,
+    message: {
+        error: "Zbyt wiele prób. Spróbuj ponownie za 15 minut."
+    }
+});
+
+app.use("/api", apiLimiter);
+
+app.use(
+    [
+        "/api/auth/sign-in",
+        "/api/auth/sign-up",
+        "/api/auth/request-password-reset",
+        "/api/auth/forget-password",
+        "/api/auth/reset-password",
+        "/api/auth/send-verification-email",
+        "/api/auth/email-otp"
+    ],
+    authLimiter
+);
 
 // STRIPE WEBHOOK
 // Musi znajdować się przed express.json().
