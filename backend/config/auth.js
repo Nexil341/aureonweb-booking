@@ -3,27 +3,8 @@ require("dotenv").config();
 const { betterAuth } = require("better-auth");
 const { emailOTP } = require("better-auth/plugins");
 const { prismaAdapter } = require("better-auth/adapters/prisma");
-const { Resend } = require("resend");
 const prisma = require("./prisma");
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-const EMAIL_FROM =
-    process.env.EMAIL_FROM || "AUREONWEB <onboarding@resend.dev>";
-
-function escapeHtml(value) {
-    return String(value).replace(/[&<>"']/g, (character) => {
-        const entities = {
-            "&": "&amp;",
-            "<": "&lt;",
-            ">": "&gt;",
-            '"': "&quot;",
-            "'": "&#39;",
-        };
-
-        return entities[character];
-    });
-}
+const { sendEmail, escapeHtml } = require("./email");
 
 function emailTemplate({ title, message, url, button }) {
     return `
@@ -75,22 +56,6 @@ function codeEmailTemplate({ title, message, code }) {
       </div>
     </div>
   `;
-}
-
-async function sendEmail({ to, subject, html }) {
-    const { data, error } = await resend.emails.send({
-        from: EMAIL_FROM,
-        to,
-        subject,
-        html,
-    });
-
-    if (error) {
-        console.error("Resend error:", error);
-        throw new Error("Nie udało się wysłać wiadomości e-mail.");
-    }
-
-    return data;
 }
 
 const auth = betterAuth({
