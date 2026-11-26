@@ -14,6 +14,7 @@ const adminRouter = require("./routes/admin");
 const paymentsRouter = require("./routes/payments");
 const paymentsController = require("./controllers/paymentsController");
 const messagesRouter = require("./routes/messages");
+const contactRouter = require("./routes/contact");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -102,7 +103,7 @@ app.use("/api/orders", ordersRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/payments", paymentsRouter);
 app.use("/api/messages", messagesRouter);
-
+app.use("/api/contact", contactRouter);
 // 404
 app.use((req, res) => {
     res.status(404).json({
