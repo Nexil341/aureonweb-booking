@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useRef, useState } from "react";
@@ -27,6 +26,26 @@ import {
 } from "lucide-react";
 
 type PackageId = "basic" | "standard" | "premium";
+
+// Wartości muszą zgadzać się z backend/validators/orderFields.js
+const WEBSITE_TYPES = [
+    { id: "landing", label: "Landing page (jedna strona)" },
+    { id: "business", label: "Strona firmowa" },
+    { id: "shop", label: "Sklep internetowy" },
+    { id: "booking", label: "System rezerwacji" },
+    { id: "other", label: "Inne" },
+] as const;
+
+type WebsiteType = (typeof WEBSITE_TYPES)[number]["id"];
+
+const MATERIALS = [
+    { id: "logo", label: "Logo" },
+    { id: "photos", label: "Zdjęcia" },
+    { id: "texts", label: "Teksty" },
+    { id: "need_help", label: "Potrzebuję pomocy z treściami" },
+] as const;
+
+type Material = (typeof MATERIALS)[number]["id"];
 
 const PACKAGES: Record<PackageId, number> = {
     basic: 9999,
@@ -76,6 +95,12 @@ export default function OrderWizard() {
     const [contactEmail, setContactEmail] = useState("");
     const [description, setDescription] = useState("");
     const [inspiration, setInspiration] = useState("");
+
+    const [websiteType, setWebsiteType] = useState<WebsiteType | "">("");
+    const [phone, setPhone] = useState("");
+    const [domain, setDomain] = useState("");
+    const [desiredDeadline, setDesiredDeadline] = useState("");
+    const [materials, setMaterials] = useState<Material[]>([]);
 
     const [attempted, setAttempted] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -128,11 +153,57 @@ export default function OrderWizard() {
         }
     })();
 
+    // Te same zasady co w backendzie (orderFields.js),
+    // żeby klient widział błąd od razu, a nie po wysłaniu.
+    const phoneValid = (() => {
+        const value = phone.trim();
+
+        if (!value) return true;
+        if (!/^\+?[\d\s\-()]{7,25}$/.test(value)) return false;
+
+        const digits = value.replace(/\D/g, "");
+        return digits.length >= 9 && digits.length <= 15;
+    })();
+
+    const domainValid = (() => {
+        const value = domain.trim();
+
+        if (!value) return true;
+        return value.length <= 300 && /\.[a-z]{2,}/i.test(value);
+    })();
+
+    // Format RRRR-MM-DD pozwala porównywać daty jak tekst
+    const today = new Date().toISOString().slice(0, 10);
+
+    // Maksymalnie 2 lata w przód — tak samo jak MAX_DEADLINE_DAYS w backendzie
+    const maxDeadline = (() => {
+        const date = new Date();
+        date.setUTCDate(date.getUTCDate() + 730);
+        return date.toISOString().slice(0, 10);
+    })();
+
+    const deadlineValid =
+        !desiredDeadline ||
+        (/^\d{4}-\d{2}-\d{2}$/.test(desiredDeadline) &&
+            desiredDeadline >= today &&
+            desiredDeadline <= maxDeadline);
+
+    function toggleMaterial(id: Material) {
+        setMaterials((current) =>
+            current.includes(id)
+                ? current.filter((item) => item !== id)
+                : [...current, id]
+        );
+    }
+
     const projectValid =
         businessValid &&
         emailValid &&
         descriptionValid &&
-        inspirationValid;
+        inspirationValid &&
+        phoneValid &&
+        domainValid &&
+        deadlineValid;
 
     const steps = [
         t("steps.package"),
@@ -225,6 +296,11 @@ export default function OrderWizard() {
                             contact_email: contactEmail.trim(),
                             description: description.trim(),
                             inspiration: inspiration.trim(),
+                            website_type: websiteType || null,
+                            phone: phone.trim(),
+                            domain: domain.trim(),
+                            desired_deadline: desiredDeadline,
+                            materials,
                         }),
                     }
                 );
@@ -373,8 +449,8 @@ export default function OrderWizard() {
                                 <div key={label} className="min-w-0">
                                     <div
                                         className={`mb-3 h-1.5 rounded-full transition-colors ${index <= step
-                                                ? "bg-violet-500"
-                                                : "bg-white/10"
+                                            ? "bg-violet-500"
+                                            : "bg-white/10"
                                             }`}
                                     />
 
@@ -390,8 +466,8 @@ export default function OrderWizard() {
 
                                         <span
                                             className={`hidden text-xs font-medium sm:block ${index === step
-                                                    ? "text-white"
-                                                    : "text-zinc-500"
+                                                ? "text-white"
+                                                : "text-zinc-500"
                                                 }`}
                                         >
                                             {label}
@@ -460,8 +536,8 @@ export default function OrderWizard() {
                                                         }
                                                         aria-pressed={selected}
                                                         className={`w-full rounded-2xl border p-5 text-left transition sm:p-6 ${selected
-                                                                ? "border-violet-500 bg-violet-500/10 shadow-[0_0_30px_rgba(124,58,237,0.08)]"
-                                                                : "border-white/10 bg-[#11111b] hover:border-violet-500/30"
+                                                            ? "border-violet-500 bg-violet-500/10 shadow-[0_0_30px_rgba(124,58,237,0.08)]"
+                                                            : "border-white/10 bg-[#11111b] hover:border-violet-500/30"
                                                             }`}
                                                     >
                                                         <div className="flex items-center justify-between gap-4">
@@ -486,8 +562,8 @@ export default function OrderWizard() {
 
                                                                 <div
                                                                     className={`ml-auto mt-2 flex h-6 w-6 items-center justify-center rounded-full border ${selected
-                                                                            ? "border-violet-400 bg-violet-600"
-                                                                            : "border-white/20"
+                                                                        ? "border-violet-400 bg-violet-600"
+                                                                        : "border-white/20"
                                                                         }`}
                                                                 >
                                                                     {selected && (
@@ -736,6 +812,147 @@ export default function OrderWizard() {
                                                             </p>
                                                         )}
                                                 </div>
+
+                                                <div>
+                                                    <label
+                                                        htmlFor="websiteType"
+                                                        className="mb-2 block text-sm font-medium"
+                                                    >
+                                                        Rodzaj strony{" "}
+                                                        <span className="text-zinc-500">(opcjonalnie)</span>
+                                                    </label>
+
+                                                    <select
+                                                        id="websiteType"
+                                                        value={websiteType}
+                                                        onChange={(e) =>
+                                                            setWebsiteType(
+                                                                e.target.value as WebsiteType | ""
+                                                            )
+                                                        }
+                                                        className={inputClass}
+                                                    >
+                                                        <option value="">Wybierz...</option>
+                                                        {WEBSITE_TYPES.map((type) => (
+                                                            <option key={type.id} value={type.id}>
+                                                                {type.label}
+                                                            </option>
+                                                        ))}
+                                                    </select>
+                                                </div>
+
+                                                <div className="grid gap-5 sm:grid-cols-2">
+                                                    <div>
+                                                        <label
+                                                            htmlFor="phone"
+                                                            className="mb-2 block text-sm font-medium"
+                                                        >
+                                                            Telefon{" "}
+                                                            <span className="text-zinc-500">(opcjonalnie)</span>
+                                                        </label>
+
+                                                        <input
+                                                            id="phone"
+                                                            type="tel"
+                                                            autoComplete="tel"
+                                                            value={phone}
+                                                            onChange={(e) => setPhone(e.target.value)}
+                                                            maxLength={25}
+                                                            placeholder="+48 600 100 200"
+                                                            className={inputClass}
+                                                            aria-invalid={attempted && !phoneValid}
+                                                        />
+
+                                                        {attempted && !phoneValid && (
+                                                            <p className="mt-2 text-xs text-red-400">
+                                                                Podaj poprawny numer telefonu.
+                                                            </p>
+                                                        )}
+                                                    </div>
+
+                                                    <div>
+                                                        <label
+                                                            htmlFor="desiredDeadline"
+                                                            className="mb-2 block text-sm font-medium"
+                                                        >
+                                                            Preferowany termin{" "}
+                                                            <span className="text-zinc-500">(opcjonalnie)</span>
+                                                        </label>
+
+                                                        <input
+                                                            id="desiredDeadline"
+                                                            type="date"
+                                                            min={today}
+                                                            max={maxDeadline}
+                                                            value={desiredDeadline}
+                                                            onChange={(e) => setDesiredDeadline(e.target.value)}
+                                                            className={inputClass + " [color-scheme:dark]"}
+                                                            aria-invalid={attempted && !deadlineValid}
+                                                        />
+
+                                                        {attempted && !deadlineValid && (
+                                                            <p className="mt-2 text-xs text-red-400">
+                                                                Wybierz termin od dziś do 2 lat w przód.                                                            </p>
+                                                        )}
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label
+                                                        htmlFor="domain"
+                                                        className="mb-2 block text-sm font-medium"
+                                                    >
+                                                        Twoja domena{" "}
+                                                        <span className="text-zinc-500">(jeśli masz)</span>
+                                                    </label>
+
+                                                    <input
+                                                        id="domain"
+                                                        value={domain}
+                                                        onChange={(e) => setDomain(e.target.value)}
+                                                        maxLength={300}
+                                                        placeholder="twojafirma.pl"
+                                                        className={inputClass}
+                                                        aria-invalid={attempted && !domainValid}
+                                                    />
+
+                                                    {attempted && !domainValid && (
+                                                        <p className="mt-2 text-xs text-red-400">
+                                                            Podaj poprawną domenę, np. twojafirma.pl.
+                                                        </p>
+                                                    )}
+                                                </div>
+
+                                                <div>
+                                                    <p className="mb-3 text-sm font-medium">
+                                                        Co już masz?{" "}
+                                                        <span className="text-zinc-500">(opcjonalnie)</span>
+                                                    </p>
+
+                                                    <div className="grid gap-3 sm:grid-cols-2">
+                                                        {MATERIALS.map((item) => {
+                                                            const checked = materials.includes(item.id);
+
+                                                            return (
+                                                                <label
+                                                                    key={item.id}
+                                                                    className={`flex cursor-pointer items-center gap-3 rounded-xl border px-4 py-3 text-sm transition ${checked
+                                                                        ? "border-violet-500/50 bg-violet-500/10 text-white"
+                                                                        : "border-white/10 text-zinc-300 hover:border-white/20"
+                                                                        }`}
+                                                                >
+                                                                    <input
+                                                                        type="checkbox"
+                                                                        checked={checked}
+                                                                        onChange={() => toggleMaterial(item.id)}
+                                                                        className="h-4 w-4 accent-violet-500"
+                                                                    />
+                                                                    {item.label}
+                                                                </label>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     )}
@@ -873,6 +1090,53 @@ export default function OrderWizard() {
                                                             <p className="break-all text-sm text-violet-300">
                                                                 {inspiration}
                                                             </p>
+                                                        </div>
+                                                    )}
+
+                                                    {(websiteType || phone.trim() || domain.trim() || desiredDeadline || materials.length > 0) && (
+                                                        <div className="grid gap-4 rounded-xl border border-white/5 bg-[#0b0b13] p-4 text-sm sm:grid-cols-2">
+                                                            {websiteType && (
+                                                                <div>
+                                                                    <p className="mb-1 text-xs text-zinc-500">Rodzaj strony</p>
+                                                                    <p className="text-zinc-300">
+                                                                        {WEBSITE_TYPES.find((type) => type.id === websiteType)?.label}
+                                                                    </p>
+                                                                </div>
+                                                            )}
+
+                                                            {phone.trim() && (
+                                                                <div>
+                                                                    <p className="mb-1 text-xs text-zinc-500">Telefon</p>
+                                                                    <p className="text-zinc-300">{phone}</p>
+                                                                </div>
+                                                            )}
+
+                                                            {domain.trim() && (
+                                                                <div>
+                                                                    <p className="mb-1 text-xs text-zinc-500">Domena</p>
+                                                                    <p className="break-all text-zinc-300">{domain}</p>
+                                                                </div>
+                                                            )}
+
+                                                            {desiredDeadline && (
+                                                                <div>
+                                                                    <p className="mb-1 text-xs text-zinc-500">Preferowany termin</p>
+                                                                    <p className="text-zinc-300">
+                                                                        {new Date(desiredDeadline).toLocaleDateString("pl-PL")}
+                                                                    </p>
+                                                                </div>
+                                                            )}
+
+                                                            {materials.length > 0 && (
+                                                                <div className="sm:col-span-2">
+                                                                    <p className="mb-1 text-xs text-zinc-500">Materiały</p>
+                                                                    <p className="text-zinc-300">
+                                                                        {MATERIALS.filter((item) => materials.includes(item.id))
+                                                                            .map((item) => item.label)
+                                                                            .join(", ")}
+                                                                    </p>
+                                                                </div>
+                                                            )}
                                                         </div>
                                                     )}
                                                 </div>
